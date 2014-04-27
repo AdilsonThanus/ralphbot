@@ -1,0 +1,48 @@
+div( ng-controller="MainCtrl")
+span.info(ng-show="feedback")
+    {{status}}
+div(class="panel panel-success")
+    div(class="panel-heading span6")
+        div.h1 RalphBot
+    div(class="panel-body")
+        div.center
+            table(class="table table-striped center-block")
+                tr
+                    td(class="span6", colspan="3")
+                        img(src="http://192.168.0.17:8081", class="center" height="240", width="320")
+
+                tr
+                    td.span2
+                    td.span2
+                        button(class='btn btn-primary center-block', ng-click="rover('frente')", title="Frente")
+                            i(class="glyphicon glyphicon-arrow-up", style="font-size:96px;")
+                    td.span2
+                tr
+                    td.span2
+                        button(class='btn btn-primary', ng-click="rover('esquerda')", title="Esquerda")
+                            i(class="glyphicon glyphicon-arrow-left", style="font-size:96px;")
+                    td.span2
+                        button(class="btn btn-danger" ,ng-click="rover('parar')", title="Parar")
+                            i(class="glyphicon glyphicon-stop", style="font-size:96px;")
+                    td.span2
+                        button(class="btn btn-primary", ng-click="rover('direita')", title="Direita")
+                            i(class="glyphicon glyphicon-arrow-right", style="font-size:96px;")
+                tr
+                    td.span2
+                    td.span2
+                        button(class='btn btn-primary', ng-click="rover('frente')", title="Frente")
+                            i(class="glyphicon glyphicon-arrow-up", style="font-size:96px;")
+                    td.span2
+                tr
+                    td(class="span2", colspan="3")
+                        div(id="tilt", ui-slider="{orientation: 'vertical', range: 'min', step:'5'}", min="0", max="180", ng-model="roverModel.tilt", ng-change="sliderChange('tilt')")
+                tr
+                    td(class="span2", colspan="3")
+                        div(id="pan", ui-slider="{range: 'min', step:'5'}", min="0", max="180", ng-model="roverModel.pan", ng-change="sliderChange('pan')")
+                tr
+                    td(class="span2", colspan="3")
+                        div(id="arm", ui-slider="{range: 'min', step:'5'}", min="0", max="180", ng-model="roverModel.arm", ng-change="sliderChange('arm')")
+
+p Pan: {{roverModel.pan}}
+p Tilt: {{roverModel.tilt}}
+p Arm: {{roverModel.arm}}
