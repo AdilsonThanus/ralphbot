@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="SBT: com.adthan:firmata-akka_2.10:0.2.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/local/com.adthan/firmata-akka_2.10/0.2.3/jars/firmata-akka_2.10.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.ivy2/local/com.adthan/firmata-akka_2.10/0.2.3/docs/firmata-akka_2.10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/local/com.adthan/firmata-akka_2.10/0.2.3/srcs/firmata-akka_2.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
