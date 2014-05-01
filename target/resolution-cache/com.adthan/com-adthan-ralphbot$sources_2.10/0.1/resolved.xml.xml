@@ -4,7 +4,7 @@
 		module="com-adthan-ralphbot$sources_2.10"
 		revision="0.1"
 		status="integration"
-		publication="20140427082120"
+		publication="20140501075240"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>

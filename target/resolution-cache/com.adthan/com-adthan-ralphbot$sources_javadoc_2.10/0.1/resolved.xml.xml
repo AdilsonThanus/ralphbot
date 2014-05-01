@@ -4,7 +4,7 @@
 		module="com-adthan-ralphbot$sources_javadoc_2.10"
 		revision="0.1"
 		status="integration"
-		publication="20140427082120"
+		publication="20140501075241"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -28,18 +28,6 @@
 			<artifact name="scala-library" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="scala-library" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
-		<dependency org="com.adthan" name="firmata-akka_2.10" rev="0.2.3" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="firmata-akka_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-			<artifact name="firmata-akka_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
-		</dependency>
-		<dependency org="com.typesafe.akka" name="akka-actor_2.10" rev="2.2.3" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="akka-actor_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-			<artifact name="akka-actor_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
-		</dependency>
-		<dependency org="com.typesafe" name="config" rev="1.0.2" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="config" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-			<artifact name="config" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
-		</dependency>
 		<dependency org="org.scream3r" name="jssc" rev="2.8.0" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="jssc" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="jssc" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
@@ -51,6 +39,14 @@
 		<dependency org="org.scala-lang" name="scala-reflect" rev="2.10.2" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="scala-reflect" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="scala-reflect" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.typesafe.akka" name="akka-actor_2.10" rev="2.2.3" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="akka-actor_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="akka-actor_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.typesafe" name="config" rev="1.0.2" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="config" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="config" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
 		<dependency org="com.typesafe.akka" name="akka-slf4j_2.10" rev="2.2.3" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="akka-slf4j_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
@@ -116,6 +112,18 @@
 			<artifact name="jackson-core" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="jackson-core" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
+		<dependency org="com.typesafe.akka" name="akka-testkit_2.10" rev="2.2.3" transitive="false" conf="test->default(compile);test-internal->default(compile)">
+			<artifact name="akka-testkit_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="akka-testkit_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scalatest" name="scalatest_2.10" rev="1.9.1" transitive="false" conf="test->default(compile);test-internal->default(compile)">
+			<artifact name="scalatest_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scalatest_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-lang" name="scala-actors" rev="2.10.0" transitive="false" conf="test->default(compile);test-internal->default(compile)">
+			<artifact name="scala-actors" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-actors" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
 		<dependency org="org.specs2" name="specs2_2.10" rev="1.14" transitive="false" conf="test->default(compile);test-internal->default(compile)">
 			<artifact name="specs2_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="specs2_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
@@ -135,6 +143,20 @@
 		<dependency org="org.specs2" name="scalaz-core_2.10" rev="7.0.0" transitive="false" conf="test->default(compile);test-internal->default(compile)">
 			<artifact name="scalaz-core_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="scalaz-core_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.novocode" name="junit-interface" rev="0.10" transitive="false" conf="test->default(compile);test-internal->default(compile)">
+			<artifact name="junit-interface" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="junit-interface" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="junit" name="junit-dep" rev="4.10" transitive="false" conf="test->default(compile);test-internal->default(compile)">
+			<artifact name="junit-dep" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="junit-dep" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.hamcrest" name="hamcrest-core" rev="1.1" transitive="false" conf="test->default(compile);test-internal->default(compile)">
+			<artifact name="hamcrest-core" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.scala-tools.testing" name="test-interface" rev="0.5" transitive="false" conf="test->default(compile);test-internal->default(compile)">
+			<artifact name="test-interface" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.4" transitive="false" conf="scala-tool->default(compile)">
 			<artifact name="scala-compiler" type="src" ext="jar" conf="sources" e:classifier="sources"/>

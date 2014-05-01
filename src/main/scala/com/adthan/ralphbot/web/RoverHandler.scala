@@ -1,54 +1,62 @@
-package com.adilsonthanus.ralphbot.web
+package com.adthan.ralphbot.web
 
-import akka.actor.{ Actor, ActorLogging }
-import akka.actor.actorRef2Scala
-import akka.actor.ActorRef
-import com.adilsonthanus.ralphbot.core._
-import org.mashupbots.socko.events.WebSocketFrameEvent
-import com.adilsonthanus.ralphbot.RalphBotApp
+import akka.actor._
+import com.adthan.ralphbot.core._
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
-import org.json4s.jackson.Serialization.{ read, write, writePretty }
+import org.mashupbots.socko.events.WebSocketFrameEvent
+import akka.routing.FromConfig
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.duration._
 
-case class CommandMsg(var command:String, var params:List[String], var callback_id:Int)
+case class CommandMsg(var command: String, var params: List[String], var callback_id: Int)
 
 class RoverHandler extends Actor with ActorLogging {
+
+  import context.system
 
   implicit val formats = DefaultFormats
   type DslConversion = CommandMsg => JValue
 
-  def actorRefFactory = context
-  var board: ActorRef = actorRefFactory.actorFor("/user/roverBoard") //= new Board
+
+  var board: ActorRef = null
 
   override def preStart() {
+    var future = system.actorSelection("/user/roverBoard").resolveOne(5.seconds)
+
+    future.onSuccess({
+      case currentBoard: ActorRef =>
+        board = currentBoard
+        board ! OpenBoard
+    })
+    future.onFailure({
+      case _ =>
+        board = system.actorOf(Props(classOf[Board]).
+          withRouter(FromConfig()).withDispatcher("ralphbot-pinned-dispatcher"), "roverBoard")
+        log.info("iniciando rover")
+        board ! OpenBoard
+    })
+
     // board = context.actorOf(Props(classOf[Board]), "roverBoard")
-	  context.system.eventStream.subscribe(self,classOf[Status])
   }
+
   /**
    * Process incoming messages
    */
   def receive = {
-    case status: Status => {
-      log.info("Receive status "+ status)
-
-      RalphBotApp.webServer.webSocketConnections.writeText(status.toString);
-      //var statusJSON = status.toJson.compactPrint
-      //clients foreach (ws => ws.send("{ \"data\":{ " + statusJSON + "}}"))
-      //clients foreach (ws => ws.send(statusJSON))
-      //clients foreach (ws => ws.send("{ \"data\":" + statusJSON + ", \"callback_id\": 0,\"result\":true}"))
-    }
-    case BoardOpened(board: ActorRef) => {
+    case BoardOpened => {
       log.info("Opened  RocketSocket")
       //context become open(board)
       board ! ReadIR
+      context.stop(self)
     }
     case event: WebSocketFrameEvent =>
       // Echo web socket text frames
       handleWebSocketResponse(event)
-    //context.stop(self)
+      context.stop(self)
     case _ => {
       log.info("received unknown message of type: ")
-      //context.stop(self)
+      context.stop(self)
     }
   }
 
@@ -60,7 +68,7 @@ class RoverHandler extends Actor with ActorLogging {
     log.info(parsed.toString)
     //..foreach(x => log.info(String.valueOf(x)))
     var commandMsg = parsed.extract[CommandMsg]
-//    var msg = parse(event.readText)
+    //    var msg = parse(event.readText)
     log.info("===========================================")
     log.info("Message ==> " + commandMsg)
     log.info(board.toString)
@@ -98,16 +106,23 @@ class RoverHandler extends Actor with ActorLogging {
       }
 */
     commandMsg match {
-      case CommandMsg("armInc",_,_) => board ! ArmInc
-      case CommandMsg("armDec",_,_) => board ! ArmDec
-      case CommandMsg("panMove",List(value),_) => board ! MovePan(value.toInt)
-      case CommandMsg("tiltMove",List(value),_) => board ! MoveTilt(value.toInt)
-      case CommandMsg("armMove",List(value),_) => board ! MoveArm(value.toInt)
+      case CommandMsg("armInc", _, _) => board ! ArmInc
+      case CommandMsg("armDec", _, _) => board ! ArmDec
+      case CommandMsg("panInc", _, _) => board ! PanInc
+      case CommandMsg("panDec", _, _) => board ! PanDec
+      case CommandMsg("tiltInc", _, _) => board ! TiltInc
+      case CommandMsg("tiltDec", _, _) => board ! TiltDec
+      case CommandMsg("panMove", List(value), _) => board ! MovePan(value.toInt)
+      case CommandMsg("tiltMove", List(value), _) => board ! MoveTilt(value.toInt)
+      case CommandMsg("armMove", List(value), _) => board ! MoveArm(value.toInt)
+      case _ => {
+        log.info(s"Message not implemented : $commandMsg")
+      }
     }
-//    if (msg.contains("panInc")) board ! PanInc
-//    if (msg.contains("panDec")) board ! PanDec
-//    if (msg.contains("tiltInc")) board ! TiltInc
-//    if (msg.contains("tiltDec")) board ! TiltDec
+    //    if (msg.contains("panInc")) board ! PanInc
+    //    if (msg.contains("panDec")) board ! PanDec
+    //    if (msg.contains("tiltInc")) board ! TiltInc
+    //    if (msg.contains("tiltDec")) board ! TiltDec
 
   }
 }

@@ -12,15 +12,19 @@ angular.module('publicApp')
                 $scope.status = res;
             });
         };
-        $scope.$on('ws', function (_, data) {
-            console.log('ws ', data)
-            $scope.status = data;
-        })
+        $scope.$on('ws', function (_, msg) {
+            console.log('ws ', msg)
+            $scope.status = msg;
+            $scope.roverModel.pan = status.pan
+            $scope.roverModel.tilt = status.tilt
+            $scope.roverModel.arm = status.arm
+        });
+
         $scope.roverModel = {
             pan: 90,
             tilt: 90,
             arm: 90
-        }
+        };
         //  $scope.$watch('roverModel.pan', function(pan) {
         //     roverSocket.comando('')
         //  }

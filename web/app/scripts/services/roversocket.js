@@ -41,8 +41,8 @@ angular.module('publicApp').
             console.log("Received data from websocket: ", messageObj);
             // If an object exists with callback_id in our callbacks object, resolve it
 
-            if (messageObj.callback_id == 0) {
-                $rootScope.$broadcast("ws", messageObj.data)
+            if (messageObj.callback_id === undefined) {
+                $rootScope.$broadcast("ws", messageObj)
             } else if (callbacks.hasOwnProperty(messageObj.callback_id)) {
                 console.log(callbacks[messageObj.callback_id]);
                 $rootScope.$apply(callbacks[messageObj.callback_id].cb.resolve(messageObj.data));

@@ -1,1 +1,66 @@
-<div ng-controller="MainCtrl"></div><span ng-show="feedback" class="info">{{status}}</span><div class="panel panel-success"><div class="panel-heading span6"><div class="h1">RalphBot</div></div><div class="panel-body"><div class="center"><table class="table table-striped center-block"><tr><td colspan="3" class="span6"><img src="http://192.168.0.17:8081" height="240" width="320" class="center"/></td></tr><tr><td class="span2"></td><td class="span2"><button ng-click="rover('frente')" title="Frente" class="btn btn-primary center-block"><i style="font-size:96px;" class="glyphicon glyphicon-arrow-up"></i></button></td><td class="span2"></td></tr><tr><td class="span2"><button ng-click="rover('esquerda')" title="Esquerda" class="btn btn-primary"><i style="font-size:96px;" class="glyphicon glyphicon-arrow-left"></i></button></td><td class="span2"><button ng-click="rover('parar')" title="Parar" class="btn btn-danger"><i style="font-size:96px;" class="glyphicon glyphicon-stop"></i></button></td><td class="span2"><button ng-click="rover('direita')" title="Direita" class="btn btn-primary"><i style="font-size:96px;" class="glyphicon glyphicon-arrow-right"></i></button></td></tr><tr><td class="span2"></td><td class="span2"><button ng-click="rover('frente')" title="Frente" class="btn btn-primary"><i style="font-size:96px;" class="glyphicon glyphicon-arrow-up"></i></button></td><td class="span2"></td></tr><tr><td colspan="3" class="span2"><div id="tilt" ui-slider="{orientation: 'vertical', range: 'min', step:'5'}" min="0" max="180" ng-model="roverModel.tilt" ng-change="sliderChange('tilt')"></div></td></tr><tr><td colspan="3" class="span2"><div id="pan" ui-slider="{range: 'min', step:'5'}" min="0" max="180" ng-model="roverModel.pan" ng-change="sliderChange('pan')"></div></td></tr><tr><td colspan="3" class="span2"><div id="arm" ui-slider="{range: 'min', step:'5'}" min="0" max="180" ng-model="roverModel.arm" ng-change="sliderChange('arm')"></div></td></tr></table></div></div></div><p>Pan: {{roverModel.pan}}</p><p>Tilt: {{roverModel.tilt}}</p><p>Arm: {{roverModel.arm}}</p>
+<div ng-controller="MainCtrl"></div><span ng-show="feedback" class="info">{{status}}</span>
+<div class="panel panel-success">
+    <div class="panel-heading span6">
+        <div class="h1">RalphBot</div>
+    </div>
+    <div class="panel-body">
+        <div class="center">
+            <table class="table table-striped center-block">
+                <tr>
+                    <td colspan="3" class="span6"><img src="http://192.168.0.17:8081" height="240" width="320"
+                                                       class="center"/></td>
+                </tr>
+                <tr>
+                    <td class="span2"></td>
+                    <td class="span2">
+                        <button ng-click="rover('frente')" title="Frente" class="btn btn-primary center-block"><i
+                                style="font-size:96px;" class="glyphicon glyphicon-arrow-up"></i></button>
+                    </td>
+                    <td class="span2"></td>
+                </tr>
+                <tr>
+                    <td class="span2">
+                        <button ng-click="rover('esquerda')" title="Esquerda" class="btn btn-primary"><i
+                                style="font-size:96px;" class="glyphicon glyphicon-arrow-left"></i></button>
+                    </td>
+                    <td class="span2">
+                        <button ng-click="rover('parar')" title="Parar" class="btn btn-danger"><i
+                                style="font-size:96px;" class="glyphicon glyphicon-stop"></i></button>
+                    </td>
+                    <td class="span2">
+                        <button ng-click="rover('direita')" title="Direita" class="btn btn-primary"><i
+                                style="font-size:96px;" class="glyphicon glyphicon-arrow-right"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="span2"></td>
+                    <td class="span2">
+                        <button ng-click="rover('frente')" title="Frente" class="btn btn-primary"><i
+                                style="font-size:96px;" class="glyphicon glyphicon-arrow-up"></i></button>
+                    </td>
+                    <td class="span2"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="span2">
+                        <div id="tilt" ui-slider="{orientation: 'vertical', range: 'min', step:'5'}" min="0" max="180"
+                             ng-model="roverModel.tilt" ng-change="sliderChange('tilt')"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="span2">
+                        <div id="pan" ui-slider="{range: 'min', step:'5'}" min="0" max="180" ng-model="roverModel.pan"
+                             ng-change="sliderChange('pan')"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="span2">
+                        <div id="arm" ui-slider="{range: 'min', step:'5'}" min="0" max="180" ng-model="roverModel.arm"
+                             ng-change="sliderChange('arm')"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<p>Pan: {{roverModel.pan}}</p><p>Tilt: {{roverModel.tilt}}</p><p>Arm: {{roverModel.arm}}</p>
+<p>Status: {{status}}</p>

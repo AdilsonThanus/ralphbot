@@ -1,22 +1,20 @@
-package com.adilsonthanus.ralphbot
+package com.adthan.ralphbot
 
-import org.mashupbots.socko.events.HttpResponseStatus
 import org.mashupbots.socko.routes._
 import org.mashupbots.socko.infrastructure.Logger
 import org.mashupbots.socko.webserver.WebServer
 import org.mashupbots.socko.webserver.WebServerConfig
 import akka.actor.ActorSystem
 import akka.actor.Props
-import com.adilsonthanus.ralphbot.web.RoverHandler
 import java.io.File
 import org.mashupbots.socko.handlers.StaticContentHandlerConfig
 import com.typesafe.config.ConfigFactory
 import org.mashupbots.socko.handlers.StaticContentHandler
-import com.adilsonthanus.ralphbot.web.RoverHandler
+import com.adthan.ralphbot.web.{StatusActor, RoverHandler}
 import akka.routing.FromConfig
 import org.mashupbots.socko.handlers.StaticFileRequest
-import com.adilsonthanus.ralphbot.core.Board
-import com.adilsonthanus.ralphbot.core.OpenBoard
+import com.adthan.ralphbot.core.Board
+import com.adthan.ralphbot.core.OpenBoard
 
 object RalphBotApp extends Logger {
 
@@ -35,7 +33,7 @@ object RalphBotApp extends Logger {
   // FileUploadHandler will also be started as a router with a PinnedDispatcher since it involves IO.
   //
   val actorConfig = """
-	my-pinned-dispatcher {
+	ralphbot-pinned-dispatcher {
 	  type=PinnedDispatcher
 	  executor=thread-pool-executor
 	}
@@ -48,7 +46,11 @@ object RalphBotApp extends Logger {
 	        router = round-robin
 	        nr-of-instances = 5
 	      }
-	      /roverBoard {
+        /roverHandler {
+          router = round-robin
+          nr-of-instances = 5
+        }
+  	    /roverBoard {
 	        router = round-robin
 	        nr-of-instances = 1
 	      }
@@ -58,27 +60,24 @@ object RalphBotApp extends Logger {
 
   val actorSystem = ActorSystem("RalphBotActorSystem", ConfigFactory.parseString(actorConfig))
 
-  val board = actorSystem.actorOf(Props(classOf[Board]).
-      withRouter(FromConfig()).withDispatcher("my-pinned-dispatcher"), "roverBoard")
+  actorSystem.actorOf(Props[StatusActor])
 
+  val board = actorSystem.actorOf(Props(classOf[Board]).
+    withRouter(FromConfig()).withDispatcher("ralphbot-pinned-dispatcher"), "roverBoard")
   log.info("iniciando rover")
   board ! OpenBoard
 
   val staticContentHandlerRouter = actorSystem.actorOf(Props(new StaticContentHandler(staticContentHandlerConfig))
-    .withRouter(FromConfig()).withDispatcher("my-pinned-dispatcher"), "static-file-router")
+    .withRouter(FromConfig()).withDispatcher("ralphbot-pinned-dispatcher"), "static-file-router")
 
-  //
-  // STEP #2 - Define Routes
-  //
   val routes = Routes({
     case HttpRequest(request) => request match {
       case GET(Path("/")) => {
         // Redirect to index.html
         // This is a quick non-blocking operation so executing it in the netty thread pool is OK. 
-        request.response.redirect("http://localhost:8888/html/index.html")
+        request.response.redirect("/index.html")
       }
       case GET(Path(fileName)) => {
-        // Download requested file
         log.debug(fileName)
         staticContentHandlerRouter ! new StaticFileRequest(request, new File(contentDir, fileName))
       }
@@ -94,17 +93,19 @@ object RalphBotApp extends Logger {
 
     case WebSocketFrame(wsFrame) => {
       // Once handshaking has taken place, we can now process frames sent from the client
-      actorSystem.actorOf(Props[RoverHandler]) ! wsFrame
+      actorSystem.actorOf(Props(classOf[RoverHandler]).
+        withRouter(FromConfig()).withDispatcher("ralphbot-pinned-dispatcher"), "roverHandler") ! wsFrame
     }
   })
 
   val webServer = new WebServer(WebServerConfig(), routes, actorSystem)
+
   //
   // STEP #3 - Start and Stop Socko Web Server
   //
   def main(args: Array[String]) {
     // Start web server
-//    val webServer = new WebServer(WebServerConfig(), routes, actorSystem)
+    //    val webServer = new WebServer(WebServerConfig(), routes, actorSystem)
     Runtime.getRuntime.addShutdownHook(new Thread {
       override def run {
         webServer.stop()
