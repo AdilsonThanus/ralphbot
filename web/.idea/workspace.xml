@@ -2,92 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdfb61fa-633d-4f9f-a83b-267cfa498315" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/main/scala/com/adthan/firmakka/ArduinoActor.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/test/scala/com/adthan/firmakka/ArduinoActorMain.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/test/scala/com/adthan/firmakka/ArduinoActorSpec.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/main/scala/com/adthan/firmakka/ArduinoComponentActor.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/main/scala/com/adthan/firmakka/messages/Messages.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/main/scala/com/adthan/firmakka/Motor.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/test/scala/com/adthan/firmakka/MotorSpec.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/libraries/SBT__com_adthan_sjf_0_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/libraries/SBT__com_novocode_junit_interface_0_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/libraries/SBT__com_typesafe_akka_akka_testkit_2_10_2_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/libraries/SBT__junit_junit_dep_4_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/libraries/SBT__org_hamcrest_hamcrest_core_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/libraries/SBT__org_scala_lang_scala_actors_2_10_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/libraries/SBT__org_scala_tools_testing_test_interface_0_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/libraries/SBT__org_scalatest_scalatest_2_10_1_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/main/scala/com/adthan/firmakka/Sensor.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/test/scala/com/adthan/firmakka/SensorSpec.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/main/scala/com/adthan/firmakka/Servo.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/main/scala/com/adthan/ralphbot/web/StatusActor.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/main/resources/application.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/modules/ralphbot-build.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/SBT__com_adthan_firmata_akka_2_10_0_2_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../project/plugins.sbt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/scala/TestMain.scala" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../.idea/modules/ralpthbot2.iml" afterPath="$PROJECT_DIR$/../.idea/modules/ralphbot.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/main/scala/com/adilsonthanus/ralphbot/RalphBotApp.scala" afterPath="$PROJECT_DIR$/../src/main/scala/com/adthan/ralphbot/RalphBotApp.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/main/scala/com/adilsonthanus/ralphbot/core/Board.scala" afterPath="$PROJECT_DIR$/../src/main/scala/com/adthan/ralphbot/core/Board.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/main/scala/com/adilsonthanus/ralphbot/web/RoverHandler.scala" afterPath="$PROJECT_DIR$/../src/main/scala/com/adthan/ralphbot/web/RoverHandler.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/streams/$global/update/$global/inputs" afterPath="$PROJECT_DIR$/../target/streams/$global/update/$global/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/streams/$global/update/$global/output" afterPath="$PROJECT_DIR$/../target/streams/$global/update/$global/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/bot.html" afterPath="$PROJECT_DIR$/app/views/bot.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/bot.jade" afterPath="$PROJECT_DIR$/app/views/bot.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../build.sbt" afterPath="$PROJECT_DIR$/../build.sbt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sbt_2.10-default.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sbt_2.10-default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_2.10-default.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_2.10-default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-compile-internal.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-compile.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-docs.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-optional.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-plugin.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-pom.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-provided.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-runtime-internal.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-runtime.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-scala-tool.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-sources.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-test-internal.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-test.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-compile-internal.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-compile.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-docs.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-optional.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-plugin.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-pom.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-provided.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-runtime-internal.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-runtime.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-scala-tool.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-sources.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-test-internal.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-test.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/streams/compile/externalDependencyClasspath/$global/export" afterPath="$PROJECT_DIR$/../target/streams/compile/externalDependencyClasspath/$global/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/streams/compile/managedClasspath/$global/export" afterPath="$PROJECT_DIR$/../target/streams/compile/managedClasspath/$global/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/streams/runtime/externalDependencyClasspath/$global/export" afterPath="$PROJECT_DIR$/../target/streams/runtime/externalDependencyClasspath/$global/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/streams/runtime/managedClasspath/$global/export" afterPath="$PROJECT_DIR$/../target/streams/runtime/managedClasspath/$global/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/streams/test/externalDependencyClasspath/$global/export" afterPath="$PROJECT_DIR$/../target/streams/test/externalDependencyClasspath/$global/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/streams/test/managedClasspath/$global/export" afterPath="$PROJECT_DIR$/../target/streams/test/managedClasspath/$global/export" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/ivy-report.css" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/ivy-report.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/reports/ivy-report.xsl" afterPath="$PROJECT_DIR$/../target/resolution-cache/reports/ivy-report.xsl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/main.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/misc.xml" afterPath="$PROJECT_DIR$/../.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/modules.xml" afterPath="$PROJECT_DIR$/../.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/streams/$global/update/$global/out" afterPath="$PROJECT_DIR$/../target/streams/$global/update/$global/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/streams/$global/updateClassifiers/$global/out" afterPath="$PROJECT_DIR$/../target/streams/$global/updateClassifiers/$global/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/streams/$global/updateSbtClassifiers/$global/out" afterPath="$PROJECT_DIR$/../target/streams/$global/updateSbtClassifiers/$global/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/com.adthan/com-adthan-ralphbot$sbt_2.10/0.1/resolved.xml.properties" afterPath="$PROJECT_DIR$/../target/resolution-cache/com.adthan/com-adthan-ralphbot$sbt_2.10/0.1/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/com.adthan/com-adthan-ralphbot$sources_2.10/0.1/resolved.xml.properties" afterPath="$PROJECT_DIR$/../target/resolution-cache/com.adthan/com-adthan-ralphbot$sources_2.10/0.1/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/com.adthan/com-adthan-ralphbot$sources_javadoc_2.10/0.1/resolved.xml.properties" afterPath="$PROJECT_DIR$/../target/resolution-cache/com.adthan/com-adthan-ralphbot$sources_javadoc_2.10/0.1/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/com.adthan/com-adthan-ralphbot_2.10/0.1/resolved.xml.properties" afterPath="$PROJECT_DIR$/../target/resolution-cache/com.adthan/com-adthan-ralphbot_2.10/0.1/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/com.adthan/com-adthan-ralphbot$sbt_2.10/0.1/resolved.xml.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/com.adthan/com-adthan-ralphbot$sbt_2.10/0.1/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/com.adthan/com-adthan-ralphbot$sources_2.10/0.1/resolved.xml.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/com.adthan/com-adthan-ralphbot$sources_2.10/0.1/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/com.adthan/com-adthan-ralphbot$sources_javadoc_2.10/0.1/resolved.xml.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/com.adthan/com-adthan-ralphbot$sources_javadoc_2.10/0.1/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/resolution-cache/com.adthan/com-adthan-ralphbot_2.10/0.1/resolved.xml.xml" afterPath="$PROJECT_DIR$/../target/resolution-cache/com.adthan/com-adthan-ralphbot_2.10/0.1/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/roversocket.js" afterPath="$PROJECT_DIR$/app/scripts/services/roversocket.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="public.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -663,7 +579,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1055" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32848233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-155" y="550" width="1918" height="317" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />

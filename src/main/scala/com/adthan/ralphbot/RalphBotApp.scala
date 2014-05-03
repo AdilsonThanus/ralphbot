@@ -29,37 +29,10 @@ object RalphBotApp extends Logger {
   //
   // We are going to start StaticContentHandler actor as a router.
   // There will be 5 instances, each instance having its own thread since there is a lot of blocking IO.
-  //
-  // FileUploadHandler will also be started as a router with a PinnedDispatcher since it involves IO.
-  //
-  val actorConfig = """
-	ralphbot-pinned-dispatcher {
-	  type=PinnedDispatcher
-	  executor=thread-pool-executor
-	}
-	akka {
-	  event-handlers = ["akka.event.slf4j.Slf4jEventHandler"]
-	  loglevel=DEBUG
-	  actor {
-	    deployment {
-	      /static-file-router {
-	        router = round-robin
-	        nr-of-instances = 5
-	      }
-        /roverHandler {
-          router = round-robin
-          nr-of-instances = 5
-        }
-  	    /roverBoard {
-	        router = round-robin
-	        nr-of-instances = 1
-	      }
-	    }
-	  }
-	}"""
 
-  val actorSystem = ActorSystem("RalphBotActorSystem", ConfigFactory.parseString(actorConfig))
+  //  val actorSystem = ActorSystem("RalphBotActorSystem", ConfigFactory.parseString(actorConfig))
 
+  val actorSystem = ActorSystem("RalphBotActorSystem")
   actorSystem.actorOf(Props[StatusActor])
 
   val board = actorSystem.actorOf(Props(classOf[Board]).
@@ -97,8 +70,7 @@ object RalphBotApp extends Logger {
         withRouter(FromConfig()).withDispatcher("ralphbot-pinned-dispatcher"), "roverHandler") ! wsFrame
     }
   })
-
-  val webServer = new WebServer(WebServerConfig(), routes, actorSystem)
+  val webServer = new WebServer(new WebServerConfig(ConfigFactory.load(), "webserver"), routes, actorSystem)
 
   //
   // STEP #3 - Start and Stop Socko Web Server
@@ -115,7 +87,7 @@ object RalphBotApp extends Logger {
     })
     webServer.start()
 
-    System.out.println("Open your browser and navigate to http://localhost:8888")
+    //System.out.println("Open your browser and navigate to http://localhost:8888")
   }
 
   private def createTempDir(namePrefix: String): File = {

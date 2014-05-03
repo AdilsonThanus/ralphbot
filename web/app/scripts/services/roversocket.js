@@ -9,8 +9,10 @@ angular.module('publicApp').
         // Create a unique callback ID to map requests to responses
         var currentCallbackId = 0;
         // Create our websocket object with the address to the websocket
-//        var ws = new WebSocket("ws://" + location+ "roverSocket");
-        var ws = new WebSocket("ws://localhost:8888/roverSocket");
+        var url = "ws://" + location.host + "/roverSocket"
+        console.log(url)
+        var ws = new WebSocket(url);
+//        var ws = new WebSocket("ws://localhost:8888/roverSocket");
 
         ws.onopen = function () {
             console.log("Socket has been opened!");
