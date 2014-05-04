@@ -7,21 +7,24 @@ import org.mashupbots.socko.webserver.WebServerConfig
 import akka.actor.ActorSystem
 import akka.actor.Props
 import java.io.File
-import org.mashupbots.socko.handlers.StaticContentHandlerConfig
+import org.mashupbots.socko.handlers.{StaticResourceRequest, StaticContentHandlerConfig, StaticContentHandler, StaticFileRequest}
 import com.typesafe.config.ConfigFactory
-import org.mashupbots.socko.handlers.StaticContentHandler
 import com.adthan.ralphbot.web.{StatusActor, RoverHandler}
 import akka.routing.FromConfig
-import org.mashupbots.socko.handlers.StaticFileRequest
 import com.adthan.ralphbot.core.Board
 import com.adthan.ralphbot.core.OpenBoard
 
 object RalphBotApp extends Logger {
 
-  val contentDir = new File("web/app")
+  //log.info(this.getClass().getClassLoader().getResource("web").toString);
+
+//  val contentDir = new File("classpath:/web/")
+  //val contentDir = new File(Thread.currentThread().getContextClassLoader().getResource("web").getPath())
+ // log.info(contentDir.getAbsolutePath)
+  //.info(contentDir.getPath)
   val tempDir = createTempDir("temp_")
   val staticContentHandlerConfig = StaticContentHandlerConfig(
-    rootFilePaths = Seq(contentDir.getAbsolutePath),
+    //rootFilePaths = Seq(contentDir.getPath()),
     tempDir = tempDir)
 
   //
@@ -34,6 +37,9 @@ object RalphBotApp extends Logger {
 
   val actorSystem = ActorSystem("RalphBotActorSystem")
   actorSystem.actorOf(Props[StatusActor])
+
+  var roverHandler = actorSystem.actorOf(Props(classOf[RoverHandler]).
+    withRouter(FromConfig()).withDispatcher("ralphbot-pinned-dispatcher"), "roverHandler")
 
   val board = actorSystem.actorOf(Props(classOf[Board]).
     withRouter(FromConfig()).withDispatcher("ralphbot-pinned-dispatcher"), "roverBoard")
@@ -51,8 +57,10 @@ object RalphBotApp extends Logger {
         request.response.redirect("/index.html")
       }
       case GET(Path(fileName)) => {
-        log.debug(fileName)
-        staticContentHandlerRouter ! new StaticFileRequest(request, new File(contentDir, fileName))
+       // log.debug(new File(contentDir, fileName).getAbsolutePath)
+       // log.debug(new File(contentDir.getAbsolutePath+"/"+ fileName).getAbsolutePath)
+        log.debug("web"+ fileName)
+        staticContentHandlerRouter ! new StaticResourceRequest(request, "web"+ fileName)
       }
     }
 
@@ -66,8 +74,8 @@ object RalphBotApp extends Logger {
 
     case WebSocketFrame(wsFrame) => {
       // Once handshaking has taken place, we can now process frames sent from the client
-      actorSystem.actorOf(Props(classOf[RoverHandler]).
-        withRouter(FromConfig()).withDispatcher("ralphbot-pinned-dispatcher"), "roverHandler") ! wsFrame
+      //actorSystem.actorOf(Props(classOf[RoverHandler])) ! wsFrame
+      roverHandler ! wsFrame
     }
   })
   val webServer = new WebServer(new WebServerConfig(ConfigFactory.load(), "webserver"), routes, actorSystem)
@@ -81,7 +89,7 @@ object RalphBotApp extends Logger {
     Runtime.getRuntime.addShutdownHook(new Thread {
       override def run {
         webServer.stop()
-        contentDir.delete()
+       // contentDir.delete()
         tempDir.delete()
       }
     })

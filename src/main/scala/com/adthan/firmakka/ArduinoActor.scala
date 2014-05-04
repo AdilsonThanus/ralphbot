@@ -26,7 +26,7 @@ object ArduinoObj {
   def open() = {
     serial = new Serial(this, port, baud)
     try {
-      Thread.sleep(3000); // let bootloader timeout
+      Thread.sleep(4000); // let bootloader timeout
     } catch {
       case e: InterruptedException =>
     }

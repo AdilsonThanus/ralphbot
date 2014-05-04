@@ -40,39 +40,38 @@ class RoverHandler extends Actor with ActorLogging {
     // board = context.actorOf(Props(classOf[Board]), "roverBoard")
   }
 
-  /**
-   * Process incoming messages
-   */
   def receive = {
     case BoardOpened => {
       log.info("Opened  RocketSocket")
-      //context become open(board)
-      board ! ReadIR
-      context.stop(self)
+      //board ! ReadIR
+     // context become opened
+      //      context.stop(self)
     }
+//
+//  }
+//
+//  /**
+//   * Process incoming messages
+//   */
+//  def opened: Receive = {
     case event: WebSocketFrameEvent =>
       // Echo web socket text frames
       handleWebSocketResponse(event)
-      context.stop(self)
+     // context.stop(self)
     case _ => {
       log.info("received unknown message of type: ")
-      context.stop(self)
+     // context.stop(self)
     }
   }
 
   def handleWebSocketResponse(event: WebSocketFrameEvent) = {
 
-    val text = event.readText
-    log.info(text)
-    val parsed = parse(text)
-    log.info(parsed.toString)
-    //..foreach(x => log.info(String.valueOf(x)))
-    var commandMsg = parsed.extract[CommandMsg]
+    var commandMsg = = parse(event.readText).extract[CommandMsg]
     //    var msg = parse(event.readText)
     log.info("===========================================")
     log.info("Message ==> " + commandMsg)
-    log.info(board.toString)
     log.info("===========================================")
+
     //log.info("Distancia : " + board.readSensorIR)
 
     //      ws.send("Distancia : " + board.status.ir)

@@ -24,7 +24,7 @@ module.exports = function (grunt) {
         yeoman: {
             // configurable paths
             app: require('./bower.json').appPath || 'app',
-            dist: 'dist'
+            dist: '../src/main/resources/web'
         },
 
         // Watches files for changes and runs tasks based on the changed files
@@ -192,7 +192,7 @@ module.exports = function (grunt) {
                     src: [
                         '<%= yeoman.dist %>/scripts/{,*/}*.js',
                         '<%= yeoman.dist %>/styles/{,*/}*.css',
-                        '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+                       // '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
                         '<%= yeoman.dist %>/styles/fonts/*'
                     ]
                 }
@@ -325,6 +325,15 @@ module.exports = function (grunt) {
                         cwd: '.tmp/images',
                         dest: '<%= yeoman.dist %>/images',
                         src: ['generated/*']
+                    },
+                    //,
+                    // add this rule to copy the fonts:
+                    {
+                      expand: true,
+                      flatten: true,
+                      cwd: '<%= yeoman.app %>',
+                      dest: '<%= yeoman.dist %>/bower_components/bootstrap/dist/fonts',
+                      src: ['bower_components/bootstrap/dist/fonts/*.*']
                     }
                 ]
             },

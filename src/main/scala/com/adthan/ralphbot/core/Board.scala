@@ -18,17 +18,14 @@ case object ReadIR
 case class Distance(value: Double)
 
 case object ArmInc
-
 case object ArmDec
-
 case object PanInc
-
 case object PanDec
-
 case object TiltInc
-
 case object TiltDec
 
+case object Forward
+case object Reverse
 case class MoveTilt(pos: Int)
 
 case class MovePan(pos: Int)

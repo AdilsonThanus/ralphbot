@@ -4,7 +4,7 @@
 		module="com-adthan-ralphbot$sbt_2.10"
 		revision="0.1"
 		status="integration"
-		publication="20140503082655"
+		publication="20140504070346"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>

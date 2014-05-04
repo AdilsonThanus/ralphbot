@@ -7,7 +7,7 @@
 		revision="0.1"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20140503082657"/>
+		date="20140504070347"/>
 	<dependencies>
 		<module organisation="com.novocode" name="junit-interface">
 			<revision name="0.10" status="release" pubdate="20130730160827" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/szeiger/junit-interface/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="30">
@@ -473,7 +473,7 @@
 				<metadata-artifact status="no" details="" size="2199" time="0" location="/home/adilson/.ivy2/cache/org.scala-tools.testing/test-interface/ivy-0.5.xml" searched="false" origin-is-local="false" origin-location="file:/home/adilson/trabalho/typesafe/activator-1.1.0/repository/org.scala-tools.testing/test-interface/0.5/ivys/ivy.xml"/>
 				<caller organisation="com.adthan" name="com-adthan-ralphbot$sources_javadoc_2.10" conf="test-internal, test, optional, compile, provided, runtime" rev="0.5" rev-constraint-default="0.5" rev-constraint-dynamic="0.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="test-interface" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+					<artifact name="test-interface" type="src" ext="jar" extra-classifier="sources" status="failed" details="" size="0" time="0"/>
 					<artifact name="test-interface" type="jar" ext="jar" status="no" details="" size="4407" time="0" location="/home/adilson/.ivy2/cache/org.scala-tools.testing/test-interface/jars/test-interface-0.5.jar">
 						<origin-location is-local="false" location="file:/home/adilson/trabalho/typesafe/activator-1.1.0/repository/org.scala-tools.testing/test-interface/0.5/jars/test-interface.jar"/>
 					</artifact>
