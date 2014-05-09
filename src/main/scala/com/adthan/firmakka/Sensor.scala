@@ -15,7 +15,7 @@ class Sensor(var pin: Int, interval: FiniteDuration) extends Actor with ArduinoC
 
 
   override def init() {
-    log.info(s"SensorInit  $pin")
+    //log.info(s"SensorInit  $pin")
     arduino ! PinMode(pin, ANALOG)
     if (interval > Duration.Zero) {
       context.system.scheduler.schedule(0.seconds, interval) {
@@ -29,7 +29,6 @@ class Sensor(var pin: Int, interval: FiniteDuration) extends Actor with ArduinoC
       //log.info(s"SensorRead $pin")
       arduino ! AnalogRead(pin)
     case SensorReaded(receivePin, value) =>
-      //log.debug(s"value: $value, pin $pin" )
       //log.info(s"Sensor $pin, $value")
       context.parent ! SensorReaded(receivePin, value)
   }

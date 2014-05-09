@@ -2,23 +2,26 @@ package com.adthan.firmakka
 
 import com.adthan.firmakka.messages._
 
-class Motor(pwd: Int, dir: Int) extends ArduinoComponentActor {
 
+case class MotorPins(vel: Int, dir: Int, current: Int = -1)
+
+class Motor(var velPin: Int, var dirPin: Int, var curtPin: Int = -1) extends ArduinoComponentActor {
+  def this(pins: MotorPins) = this(pins.vel, pins.dir)
 
   override def init() {
-    arduino ! PinMode(dir, OUTPUT)
-    arduino ! PinMode(pwd, PWM)
+    arduino ! PinMode(dirPin, OUTPUT)
+    arduino ! PinMode(velPin, PWM)
   }
 
   override def opened() = {
     case MotorForward(vel: Int) =>
-      arduino ! DigitalWrite(dir, HIGH)
-      arduino ! AnalogWrite(pwd, vel);
+      arduino ! DigitalWrite(dirPin, HIGH)
+      arduino ! AnalogWrite(velPin, vel);
     case MotorReverse(vel: Int) =>
-      arduino ! DigitalWrite(dir, LOW)
-      arduino ! AnalogWrite(pwd, vel);
+      arduino ! DigitalWrite(dirPin, LOW)
+      arduino ! AnalogWrite(velPin, vel);
     case MotorStop =>
-      arduino ! DigitalWrite(dir, HIGH)
-      arduino ! AnalogWrite(pwd, 0)
+      arduino ! DigitalWrite(dirPin, HIGH)
+      arduino ! AnalogWrite(velPin, 0)
   }
 }

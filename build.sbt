@@ -15,7 +15,6 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "com.adthan" % "sjf" % "0.1.0",
   "org.scream3r" % "jssc" % "2.8.0",
   "org.mashupbots.socko" %% "socko-webserver" % "0.4.1",
   "org.json4s" %% "json4s-jackson" % "3.2.9",

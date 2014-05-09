@@ -28,6 +28,9 @@ case class PinMode(pin: Int, pinMode: Mode)
 //Sensor
 case object SensorRead
 
+//Ping
+case class PulseIn(pin: Int, value: DigitalValue, pulseOut: Int = 0, timeout: Int = 1000000)
+case class PulseInRead(pin: Int)
 //Servo
 case class ServoSetStep(step: Int)
 

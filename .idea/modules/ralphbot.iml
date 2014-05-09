@@ -54,7 +54,6 @@
     <orderEntry type="library" name="SBT: org.json4s:json4s-core_2.10:3.2.9" level="project" />
     <orderEntry type="library" name="SBT: org.json4s:json4s-jackson_2.10:3.2.9" level="project" />
     <orderEntry type="library" name="SBT: org.scala-lang:scalap:2.10.0" level="project" />
-    <orderEntry type="library" name="SBT: com.adthan:sjf:0.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: com.novocode:junit-interface:0.10" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: com.typesafe.akka:akka-testkit_2.10:2.2.3" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: junit:junit-dep:4.10" level="project" />

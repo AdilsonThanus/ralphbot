@@ -6,7 +6,7 @@
 [debug] == resolving dependencies for com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1 [compile]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@25a062e5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@42b921e0
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	local: revision in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	found org.scala-lang#scala-library;2.10.4 in sbt-chain
@@ -16,7 +16,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->default(compile)]
 [info] Resolving org.scream3r#jssc;2.8.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5936a4ba
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@76f4e8ee
 [debug] sbt-chain: module revision found in cache: org.scream3r#jssc;2.8.0
 [debug] 	local: revision in cache: org.scream3r#jssc;2.8.0
 [debug] 	found org.scream3r#jssc;2.8.0 in sbt-chain
@@ -25,7 +25,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.mashupbots.socko#socko-webserver_2.10;0.4.1 [compile->default(compile)]
 [info] Resolving org.mashupbots.socko#socko-webserver_2.10;0.4.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@76b37808
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@779535a8
 [debug] sbt-chain: module revision found in cache: org.mashupbots.socko#socko-webserver_2.10;0.4.1
 [debug] 	local: revision in cache: org.mashupbots.socko#socko-webserver_2.10;0.4.1
 [debug] 	found org.mashupbots.socko#socko-webserver_2.10;0.4.1 in public
@@ -34,7 +34,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.mashupbots.socko#socko-webserver_2.10;0.4.1 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.scala-lang#scala-reflect;2.10.2 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-reflect;2.10.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@743bfb47
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@609a5470
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.10.2
 [debug] 	local: revision in cache: org.scala-lang#scala-reflect;2.10.2
 [debug] 	found org.scala-lang#scala-reflect;2.10.2 in sbt-chain
@@ -43,7 +43,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.scala-lang#scala-reflect;2.10.2 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.typesafe.akka#akka-actor_2.10;2.2.3 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-actor_2.10;2.2.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1c2eee33
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@25d3e2b3
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.10;2.2.3
 [debug] 	local: revision in cache: com.typesafe.akka#akka-actor_2.10;2.2.3
 [debug] 	found com.typesafe.akka#akka-actor_2.10;2.2.3 in sbt-chain
@@ -52,7 +52,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.typesafe.akka#akka-actor_2.10;2.2.3 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.typesafe#config;1.0.2 [compile->default(compile)]
 [info] Resolving com.typesafe#config;1.0.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4d91c7e3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@38ae6c61
 [debug] sbt-chain: module revision found in cache: com.typesafe#config;1.0.2
 [debug] 	local: revision in cache: com.typesafe#config;1.0.2
 [debug] 	found com.typesafe#config;1.0.2 in sbt-chain
@@ -61,7 +61,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.typesafe#config;1.0.2 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.typesafe.akka#akka-slf4j_2.10;2.2.3 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-slf4j_2.10;2.2.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@44044f1b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@78200d43
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-slf4j_2.10;2.2.3
 [debug] 	local: revision in cache: com.typesafe.akka#akka-slf4j_2.10;2.2.3
 [debug] 	found com.typesafe.akka#akka-slf4j_2.10;2.2.3 in sbt-chain
@@ -70,7 +70,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.typesafe.akka#akka-slf4j_2.10;2.2.3 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.slf4j#slf4j-api;1.7.2 [compile->default(compile)]
 [info] Resolving org.slf4j#slf4j-api;1.7.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@51c3767b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3d0587a6
 [debug] sbt-chain: module revision found in cache: org.slf4j#slf4j-api;1.7.2
 [debug] 	local: revision in cache: org.slf4j#slf4j-api;1.7.2
 [debug] 	found org.slf4j#slf4j-api;1.7.2 in sbt-chain
@@ -79,7 +79,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.slf4j#slf4j-api;1.7.2 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->io.netty#netty-all;4.0.14.Final [compile->default(compile)]
 [info] Resolving io.netty#netty-all;4.0.14.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@31d9c33f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7892cdf9
 [debug] sbt-chain: module revision found in cache: io.netty#netty-all;4.0.14.Final
 [debug] 	local: revision in cache: io.netty#netty-all;4.0.14.Final
 [debug] 	found io.netty#netty-all;4.0.14.Final in sbt-chain
@@ -88,7 +88,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->io.netty#netty-all;4.0.14.Final [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.googlecode.concurrentlinkedhashmap#concurrentlinkedhashmap-lru;1.3.2 [compile->default(compile)]
 [info] Resolving com.googlecode.concurrentlinkedhashmap#concurrentlinkedhashmap-lru;1.3.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6f679d63
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@17ccee77
 [debug] sbt-chain: module revision found in cache: com.googlecode.concurrentlinkedhashmap#concurrentlinkedhashmap-lru;1.3.2
 [debug] 	local: revision in cache: com.googlecode.concurrentlinkedhashmap#concurrentlinkedhashmap-lru;1.3.2
 [debug] 	found com.googlecode.concurrentlinkedhashmap#concurrentlinkedhashmap-lru;1.3.2 in sbt-chain
@@ -97,7 +97,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.googlecode.concurrentlinkedhashmap#concurrentlinkedhashmap-lru;1.3.2 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.eclipse.jetty.npn#npn-api;1.1.0.v20120525 [compile->default(compile)]
 [info] Resolving org.eclipse.jetty.npn#npn-api;1.1.0.v20120525 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@20a9a37f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3f8a2a33
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty.npn#npn-api;1.1.0.v20120525
 [debug] 	local: revision in cache: org.eclipse.jetty.npn#npn-api;1.1.0.v20120525
 [debug] 	found org.eclipse.jetty.npn#npn-api;1.1.0.v20120525 in sbt-chain
@@ -106,7 +106,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.eclipse.jetty.npn#npn-api;1.1.0.v20120525 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->ch.qos.logback#logback-classic;1.0.9 [compile->default(compile)]
 [info] Resolving ch.qos.logback#logback-classic;1.0.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@23272332
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5a7af475
 [debug] sbt-chain: module revision found in cache: ch.qos.logback#logback-classic;1.0.9
 [debug] 	local: revision in cache: ch.qos.logback#logback-classic;1.0.9
 [debug] 	found ch.qos.logback#logback-classic;1.0.9 in public
@@ -115,7 +115,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->ch.qos.logback#logback-classic;1.0.9 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->ch.qos.logback#logback-core;1.0.9 [compile->default(compile)]
 [info] Resolving ch.qos.logback#logback-core;1.0.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2f0b7903
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5794f8b2
 [debug] sbt-chain: module revision found in cache: ch.qos.logback#logback-core;1.0.9
 [debug] 	local: revision in cache: ch.qos.logback#logback-core;1.0.9
 [debug] 	found ch.qos.logback#logback-core;1.0.9 in sbt-chain
@@ -124,7 +124,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->ch.qos.logback#logback-core;1.0.9 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.json4s#json4s-jackson_2.10;3.2.9 [compile->default(compile)]
 [info] Resolving org.json4s#json4s-jackson_2.10;3.2.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3668aae0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3b9d9599
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-jackson_2.10;3.2.9
 [debug] 	local: revision in cache: org.json4s#json4s-jackson_2.10;3.2.9
 [debug] 	found org.json4s#json4s-jackson_2.10;3.2.9 in sbt-chain
@@ -133,7 +133,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.json4s#json4s-jackson_2.10;3.2.9 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.json4s#json4s-core_2.10;3.2.9 [compile->default(compile)]
 [info] Resolving org.json4s#json4s-core_2.10;3.2.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@c598a3a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@176f61bb
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-core_2.10;3.2.9
 [debug] 	local: revision in cache: org.json4s#json4s-core_2.10;3.2.9
 [debug] 	found org.json4s#json4s-core_2.10;3.2.9 in sbt-chain
@@ -142,7 +142,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.json4s#json4s-core_2.10;3.2.9 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.json4s#json4s-ast_2.10;3.2.9 [compile->default(compile)]
 [info] Resolving org.json4s#json4s-ast_2.10;3.2.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@65417298
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3b8444b5
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-ast_2.10;3.2.9
 [debug] 	local: revision in cache: org.json4s#json4s-ast_2.10;3.2.9
 [debug] 	found org.json4s#json4s-ast_2.10;3.2.9 in sbt-chain
@@ -151,7 +151,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.json4s#json4s-ast_2.10;3.2.9 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.thoughtworks.paranamer#paranamer;2.6 [compile->default(compile)]
 [info] Resolving com.thoughtworks.paranamer#paranamer;2.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6a7e6f83
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@a78279d
 [debug] sbt-chain: module revision found in cache: com.thoughtworks.paranamer#paranamer;2.6
 [debug] 	local: revision in cache: com.thoughtworks.paranamer#paranamer;2.6
 [debug] 	found com.thoughtworks.paranamer#paranamer;2.6 in sbt-chain
@@ -160,7 +160,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.thoughtworks.paranamer#paranamer;2.6 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.scala-lang#scalap;2.10.0 [compile->default(compile)]
 [info] Resolving org.scala-lang#scalap;2.10.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3940828f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2bdbcfad
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scalap;2.10.0
 [debug] 	local: revision in cache: org.scala-lang#scalap;2.10.0
 [debug] 	found org.scala-lang#scalap;2.10.0 in sbt-chain
@@ -169,7 +169,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.scala-lang#scalap;2.10.0 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.scala-lang#scala-compiler;2.10.0 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-compiler;2.10.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@727b89c0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3f2eb937
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.10.0
 [debug] 	local: revision in cache: org.scala-lang#scala-compiler;2.10.0
 [debug] 	found org.scala-lang#scala-compiler;2.10.0 in sbt-chain
@@ -178,7 +178,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.scala-lang#scala-compiler;2.10.0 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.fasterxml.jackson.core#jackson-databind;2.3.1 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-databind;2.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@33a3ce9a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@115c00de
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-databind;2.3.1
 [debug] 	local: revision in cache: com.fasterxml.jackson.core#jackson-databind;2.3.1
 [debug] 	found com.fasterxml.jackson.core#jackson-databind;2.3.1 in sbt-chain
@@ -187,7 +187,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.fasterxml.jackson.core#jackson-databind;2.3.1 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.fasterxml.jackson.core#jackson-annotations;2.3.0 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-annotations;2.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@120f8329
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@61c1c7c1
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-annotations;2.3.0
 [debug] 	local: revision in cache: com.fasterxml.jackson.core#jackson-annotations;2.3.0
 [debug] 	found com.fasterxml.jackson.core#jackson-annotations;2.3.0 in sbt-chain
@@ -196,7 +196,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.fasterxml.jackson.core#jackson-annotations;2.3.0 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.fasterxml.jackson.core#jackson-core;2.3.1 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-core;2.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@655396f8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5dfea2b2
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-core;2.3.1
 [debug] 	local: revision in cache: com.fasterxml.jackson.core#jackson-core;2.3.1
 [debug] 	found com.fasterxml.jackson.core#jackson-core;2.3.1 in sbt-chain
@@ -652,7 +652,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.fasterxml.jackson.core#jackson-core;2.3.1 [test->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.typesafe.akka#akka-testkit_2.10;2.2.3 [test->default(compile)]
 [info] Resolving com.typesafe.akka#akka-testkit_2.10;2.2.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3d9ed308
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6111cca4
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-testkit_2.10;2.2.3
 [debug] 	local: revision in cache: com.typesafe.akka#akka-testkit_2.10;2.2.3
 [debug] 	found com.typesafe.akka#akka-testkit_2.10;2.2.3 in sbt-chain
@@ -661,7 +661,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.typesafe.akka#akka-testkit_2.10;2.2.3 [test->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.scalatest#scalatest_2.10;1.9.1 [test->default(compile)]
 [info] Resolving org.scalatest#scalatest_2.10;1.9.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@73c37b26
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@45d70c0c
 [debug] sbt-chain: module revision found in cache: org.scalatest#scalatest_2.10;1.9.1
 [debug] 	local: revision in cache: org.scalatest#scalatest_2.10;1.9.1
 [debug] 	found org.scalatest#scalatest_2.10;1.9.1 in sbt-chain
@@ -670,7 +670,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.scalatest#scalatest_2.10;1.9.1 [test->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.scala-lang#scala-actors;2.10.0 [test->default(compile)]
 [info] Resolving org.scala-lang#scala-actors;2.10.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@277a7b8a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@69538746
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-actors;2.10.0
 [debug] 	local: revision in cache: org.scala-lang#scala-actors;2.10.0
 [debug] 	found org.scala-lang#scala-actors;2.10.0 in sbt-chain
@@ -679,7 +679,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.scala-lang#scala-actors;2.10.0 [test->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.specs2#specs2_2.10;1.14 [test->default(compile)]
 [info] Resolving org.specs2#specs2_2.10;1.14 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@c8bf739
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@19b07bac
 [debug] sbt-chain: module revision found in cache: org.specs2#specs2_2.10;1.14
 [debug] 	local: revision in cache: org.specs2#specs2_2.10;1.14
 [debug] 	found org.specs2#specs2_2.10;1.14 in sbt-chain
@@ -688,7 +688,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.specs2#specs2_2.10;1.14 [test->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.specs2#specs2-scalaz-core_2.10;7.0.0 [test->default(compile)]
 [info] Resolving org.specs2#specs2-scalaz-core_2.10;7.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@54a60b5e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d9c53a2
 [debug] sbt-chain: module revision found in cache: org.specs2#specs2-scalaz-core_2.10;7.0.0
 [debug] 	local: revision in cache: org.specs2#specs2-scalaz-core_2.10;7.0.0
 [debug] 	found org.specs2#specs2-scalaz-core_2.10;7.0.0 in sbt-chain
@@ -697,7 +697,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.specs2#specs2-scalaz-core_2.10;7.0.0 [test->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.specs2#specs2-scalaz-concurrent_2.10;7.0.0 [test->default(compile)]
 [info] Resolving org.specs2#specs2-scalaz-concurrent_2.10;7.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3b459db8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@41a182ee
 [debug] sbt-chain: module revision found in cache: org.specs2#specs2-scalaz-concurrent_2.10;7.0.0
 [debug] 	local: revision in cache: org.specs2#specs2-scalaz-concurrent_2.10;7.0.0
 [debug] 	found org.specs2#specs2-scalaz-concurrent_2.10;7.0.0 in sbt-chain
@@ -706,7 +706,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.specs2#specs2-scalaz-concurrent_2.10;7.0.0 [test->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.specs2#scalaz-effect_2.10;7.0.0 [test->default(compile)]
 [info] Resolving org.specs2#scalaz-effect_2.10;7.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7918712b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3cce2b1c
 [debug] sbt-chain: module revision found in cache: org.specs2#scalaz-effect_2.10;7.0.0
 [debug] 	local: revision in cache: org.specs2#scalaz-effect_2.10;7.0.0
 [debug] 	found org.specs2#scalaz-effect_2.10;7.0.0 in sbt-chain
@@ -715,7 +715,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.specs2#scalaz-effect_2.10;7.0.0 [test->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.specs2#scalaz-core_2.10;7.0.0 [test->default(compile)]
 [info] Resolving org.specs2#scalaz-core_2.10;7.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5e400067
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@40c17724
 [debug] sbt-chain: module revision found in cache: org.specs2#scalaz-core_2.10;7.0.0
 [debug] 	local: revision in cache: org.specs2#scalaz-core_2.10;7.0.0
 [debug] 	found org.specs2#scalaz-core_2.10;7.0.0 in sbt-chain
@@ -724,7 +724,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.specs2#scalaz-core_2.10;7.0.0 [test->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.novocode#junit-interface;0.10 [test->default(compile)]
 [info] Resolving com.novocode#junit-interface;0.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@269e1488
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52aacda9
 [debug] sbt-chain: module revision found in cache: com.novocode#junit-interface;0.10
 [debug] 	local: revision in cache: com.novocode#junit-interface;0.10
 [debug] 	found com.novocode#junit-interface;0.10 in sbt-chain
@@ -733,7 +733,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->com.novocode#junit-interface;0.10 [test->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->junit#junit-dep;4.10 [test->default(compile)]
 [info] Resolving junit#junit-dep;4.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6877ebc0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3408ab31
 [debug] sbt-chain: module revision found in cache: junit#junit-dep;4.10
 [debug] 	local: revision in cache: junit#junit-dep;4.10
 [debug] 	found junit#junit-dep;4.10 in sbt-chain
@@ -742,7 +742,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->junit#junit-dep;4.10 [test->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.hamcrest#hamcrest-core;1.1 [test->default(compile)]
 [info] Resolving org.hamcrest#hamcrest-core;1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@69e1ffe1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4e8e7b83
 [debug] sbt-chain: module revision found in cache: org.hamcrest#hamcrest-core;1.1
 [debug] 	local: revision in cache: org.hamcrest#hamcrest-core;1.1
 [debug] 	found org.hamcrest#hamcrest-core;1.1 in sbt-chain
@@ -751,7 +751,7 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.hamcrest#hamcrest-core;1.1 [test->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1->org.scala-tools.testing#test-interface;0.5 [test->default(compile)]
 [info] Resolving org.scala-tools.testing#test-interface;0.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@49fdfe7d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5878ded4
 [debug] sbt-chain: module revision found in cache: org.scala-tools.testing#test-interface;0.5
 [debug] 	local: revision in cache: org.scala-tools.testing#test-interface;0.5
 [debug] 	found org.scala-tools.testing#test-interface;0.5 in sbt-chain
@@ -1844,7 +1844,7 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar(doc)
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar(src)
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar(doc)
-[debug] :: resolution report :: resolve 1254ms :: artifacts dl 1845ms
+[debug] :: resolution report :: resolve 870ms :: artifacts dl 1364ms
 [warn] 	::::::::::::::::::::::::::::::::::::::::::::::
 [warn] 	::              FAILED DOWNLOADS            ::
 [warn] 	:: ^ see resolution messages for details  ^ ::
@@ -1864,4 +1864,4 @@
 [debug] 	report for com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1 docs produced in /media/adilson/72E66C4DE66C139F/DISCO_D/git/ralphbot/target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-docs.xml
 [debug] 	report for com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1 pom produced in /media/adilson/72E66C4DE66C139F/DISCO_D/git/ralphbot/target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-pom.xml
 [debug] 	report for com.adthan#com-adthan-ralphbot$sources_javadoc_2.10;0.1 scala-tool produced in /media/adilson/72E66C4DE66C139F/DISCO_D/git/ralphbot/target/resolution-cache/reports/com.adthan-com-adthan-ralphbot$sources_javadoc_2.10-scala-tool.xml
-[debug] 	resolve done (1254ms resolve - 1845ms download)
+[debug] 	resolve done (870ms resolve - 1364ms download)

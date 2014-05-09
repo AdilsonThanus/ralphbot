@@ -7,7 +7,7 @@ import org.mashupbots.socko.webserver.WebServerConfig
 import akka.actor.ActorSystem
 import akka.actor.Props
 import java.io.File
-import org.mashupbots.socko.handlers.{StaticResourceRequest, StaticContentHandlerConfig, StaticContentHandler, StaticFileRequest}
+import org.mashupbots.socko.handlers.{StaticResourceRequest, StaticContentHandlerConfig, StaticContentHandler}
 import com.typesafe.config.ConfigFactory
 import com.adthan.ralphbot.web.{StatusActor, RoverHandler}
 import akka.routing.FromConfig
@@ -18,9 +18,9 @@ object RalphBotApp extends Logger {
 
   //log.info(this.getClass().getClassLoader().getResource("web").toString);
 
-//  val contentDir = new File("classpath:/web/")
+  //  val contentDir = new File("classpath:/web/")
   //val contentDir = new File(Thread.currentThread().getContextClassLoader().getResource("web").getPath())
- // log.info(contentDir.getAbsolutePath)
+  // log.info(contentDir.getAbsolutePath)
   //.info(contentDir.getPath)
   val tempDir = createTempDir("temp_")
   val staticContentHandlerConfig = StaticContentHandlerConfig(
@@ -51,33 +51,33 @@ object RalphBotApp extends Logger {
 
   val routes = Routes({
     case HttpRequest(request) => request match {
-      case GET(Path("/")) => {
+      case GET(Path("/")) =>
         // Redirect to index.html
         // This is a quick non-blocking operation so executing it in the netty thread pool is OK. 
         request.response.redirect("/index.html")
-      }
-      case GET(Path(fileName)) => {
-       // log.debug(new File(contentDir, fileName).getAbsolutePath)
-       // log.debug(new File(contentDir.getAbsolutePath+"/"+ fileName).getAbsolutePath)
-        log.debug("web"+ fileName)
-        staticContentHandlerRouter ! new StaticResourceRequest(request, "web"+ fileName)
-      }
+
+      case GET(Path(fileName)) =>
+        // log.debug(new File(contentDir, fileName).getAbsolutePath)
+        // log.debug(new File(contentDir.getAbsolutePath+"/"+ fileName).getAbsolutePath)
+        log.debug("web" + fileName)
+        staticContentHandlerRouter ! new StaticResourceRequest(request, "web" + fileName)
+
     }
 
     case WebSocketHandshake(wsHandshake) => wsHandshake match {
-      case Path("/roverSocket") => {
+      case Path("/roverSocket") =>
         // To start Web Socket processing, we first have to authorize the handshake.
         // This is a security measure to make sure that web sockets can only be established at your specified end points.
         wsHandshake.authorize()
-      }
+
     }
 
-    case WebSocketFrame(wsFrame) => {
+    case WebSocketFrame(wsFrame) =>
       // Once handshaking has taken place, we can now process frames sent from the client
       //actorSystem.actorOf(Props(classOf[RoverHandler])) ! wsFrame
       roverHandler ! wsFrame
-    }
   })
+
   val webServer = new WebServer(new WebServerConfig(ConfigFactory.load(), "webserver"), routes, actorSystem)
 
   //
@@ -87,9 +87,9 @@ object RalphBotApp extends Logger {
     // Start web server
     //    val webServer = new WebServer(WebServerConfig(), routes, actorSystem)
     Runtime.getRuntime.addShutdownHook(new Thread {
-      override def run {
+      override def run() = {
         webServer.stop()
-       // contentDir.delete()
+        // contentDir.delete()
         tempDir.delete()
       }
     })

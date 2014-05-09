@@ -41,32 +41,27 @@ class RoverHandler extends Actor with ActorLogging {
   }
 
   def receive = {
-    case BoardOpened => {
+    case BoardOpened =>
       log.info("Opened  RocketSocket")
-      //board ! ReadIR
-     // context become opened
-      //      context.stop(self)
-    }
-//
-//  }
-//
-//  /**
-//   * Process incoming messages
-//   */
-//  def opened: Receive = {
-    case event: WebSocketFrameEvent =>
-      // Echo web socket text frames
-      handleWebSocketResponse(event)
-     // context.stop(self)
-    case _ => {
-      log.info("received unknown message of type: ")
-     // context.stop(self)
-    }
+    //board ! ReadIR
+    // context become opened
+    //      context.stop(self)
+    //
+    //  }
+    //
+    //  /**
+    //   * Process incoming messages
+    //   */
+    //  def opened: Receive = {
+    case event: WebSocketFrameEvent => handleWebSocketResponse(event)
+    // context.stop(self)
+    case _ => log.info("received unknown message of type: ")
+    // context.stop(self)
   }
 
   def handleWebSocketResponse(event: WebSocketFrameEvent) = {
 
-    var commandMsg = = parse(event.readText).extract[CommandMsg]
+    val commandMsg = parse(event.readText()).extract[CommandMsg]
     //    var msg = parse(event.readText)
     log.info("===========================================")
     log.info("Message ==> " + commandMsg)
@@ -114,9 +109,7 @@ class RoverHandler extends Actor with ActorLogging {
       case CommandMsg("panMove", List(value), _) => board ! MovePan(value.toInt)
       case CommandMsg("tiltMove", List(value), _) => board ! MoveTilt(value.toInt)
       case CommandMsg("armMove", List(value), _) => board ! MoveArm(value.toInt)
-      case _ => {
-        log.info(s"Message not implemented : $commandMsg")
-      }
+      case _ => log.info(s"Message not implemented : $commandMsg")
     }
     //    if (msg.contains("panInc")) board ! PanInc
     //    if (msg.contains("panDec")) board ! PanDec

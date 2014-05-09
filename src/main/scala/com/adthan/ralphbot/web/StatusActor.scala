@@ -5,7 +5,7 @@ import com.adthan.ralphbot.core.Status
 import com.adthan.ralphbot.RalphBotApp
 import org.json4s._
 import org.json4s.jackson.Serialization
-import org.json4s.jackson.Serialization.{read, write}
+import org.json4s.jackson.Serialization.write
 
 class StatusActor extends Actor with ActorLogging {
 
@@ -14,13 +14,12 @@ class StatusActor extends Actor with ActorLogging {
   implicit val formats = Serialization.formats(NoTypeHints)
 
   def receive = {
-    case status: Status => {
+    case status: Status =>
       log.info("Receive status " + status)
       var statusJSON = write(status)
-      RalphBotApp.webServer.webSocketConnections.writeText(statusJSON);
-      //clients foreach (ws => ws.send("{ \"data\":{ " + statusJSON + "}}"))
-      //clients foreach (ws => ws.send(statusJSON))
-      //clients foreach (ws => ws.send("{ \"data\":" + statusJSON + ", \"callback_id\": 0,\"result\":true}"))
-    }
+      RalphBotApp.webServer.webSocketConnections.writeText(statusJSON)
+    //clients foreach (ws => ws.send("{ \"data\":{ " + statusJSON + "}}"))
+    //clients foreach (ws => ws.send(statusJSON))
+    //clients foreach (ws => ws.send("{ \"data\":" + statusJSON + ", \"callback_id\": 0,\"result\":true}"))
   }
 }

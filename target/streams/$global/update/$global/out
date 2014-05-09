@@ -7,7 +7,7 @@
 [debug] == resolving dependencies for com.adthan#com-adthan-ralphbot_2.10;0.1 [compile]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@d244002
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2bf25a35
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	local: revision in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	found org.scala-lang#scala-library;2.10.4 in sbt-chain
@@ -15,29 +15,12 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->runtime]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->compile]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->master]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->default(compile)]
-[info] Resolving com.adthan#sjf;0.1.0 ...
-[debug] sbt-chain: Checking cache for: dependency: com.adthan#sjf;0.1.0 {compile=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: com.adthan#sjf;0.1.0
-[debug] 	local: revision in cache: com.adthan#sjf;0.1.0
-[debug] 	found com.adthan#sjf;0.1.0 in sbt-chain
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->runtime]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->compile]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [compile->master(*)]
+[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->default(compile)]
 [info] Resolving org.scream3r#jssc;2.8.0 ...
-[debug] sbt-chain: Checking cache for: dependency: org.scream3r#jssc;2.8.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[debug] sbt-chain: Checking cache for: dependency: org.scream3r#jssc;2.8.0 {compile=[default(compile)]}
 [debug] sbt-chain: module revision found in cache: org.scream3r#jssc;2.8.0
 [debug] 	local: revision in cache: org.scream3r#jssc;2.8.0
 [debug] 	found org.scream3r#jssc;2.8.0 in sbt-chain
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [compile->compile(*)]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [compile->default(compile)]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [compile->runtime]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [compile->compile]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [compile->master]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [runtime->runtime(*)]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [runtime->compile]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->master]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->default(compile)]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->runtime]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->compile]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->master]
@@ -321,14 +304,6 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->runtime]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->compile]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->master]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->default(compile)]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->runtime]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->compile]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [compile->master(*)]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [compile->compile(*)]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [runtime->runtime(*)]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [runtime->compile]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->default(compile)]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->runtime]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->compile]
@@ -496,14 +471,6 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->runtime]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->compile]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->master]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->default(compile)]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->runtime]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->compile]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [compile->master(*)]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [compile->compile(*)]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [runtime->runtime(*)]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [runtime->compile]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->default(compile)]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->runtime]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->compile]
@@ -854,14 +821,6 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->runtime]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->compile]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->master]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->default(compile)]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->runtime]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->compile]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [compile->master(*)]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [compile->compile(*)]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [runtime->runtime(*)]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [runtime->compile]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->default(compile)]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->runtime]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->compile]
@@ -1031,14 +990,6 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->runtime]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->compile]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->master]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->default(compile)]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->runtime]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->compile]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [compile->master(*)]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [compile->compile(*)]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [runtime->runtime(*)]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [runtime->compile]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->default(compile)]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->runtime]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->compile]
@@ -1208,14 +1159,6 @@
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->runtime]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->compile]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scala-lang#scala-library;2.10.4 [compile->master]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->default(compile)]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->runtime]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->compile]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [compile->master(*)]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [compile->compile(*)]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [runtime->runtime(*)]
-[debug] == resolving dependencies com.adthan#sjf;0.1.0->org.scream3r#jssc;2.8.0 [runtime->compile]
-[debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->com.adthan#sjf;0.1.0 [compile->master]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->default(compile)]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->runtime]
 [debug] == resolving dependencies com.adthan#com-adthan-ralphbot_2.10;0.1->org.scream3r#jssc;2.8.0 [compile->compile]
@@ -1553,7 +1496,6 @@
 [debug] 	resolved ivy file produced in /media/adilson/72E66C4DE66C139F/DISCO_D/git/ralphbot/target/resolution-cache/com.adthan/com-adthan-ralphbot_2.10/0.1/resolved.xml.xml
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar
-[debug] 	[NOT REQUIRED] com.adthan#sjf;0.1.0!sjf.jar
 [debug] 	[NOT REQUIRED] org.scream3r#jssc;2.8.0!jssc.jar
 [debug] 	[NOT REQUIRED] org.mashupbots.socko#socko-webserver_2.10;0.4.1!socko-webserver_2.10.jar
 [debug] 	[NOT REQUIRED] org.json4s#json4s-jackson_2.10;3.2.9!json4s-jackson_2.10.jar
@@ -1591,7 +1533,7 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.4!scala-reflect.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 1638ms :: artifacts dl 98ms
+[debug] :: resolution report :: resolve 1435ms :: artifacts dl 92ms
 [debug] 	report for com.adthan#com-adthan-ralphbot_2.10;0.1 compile produced in /media/adilson/72E66C4DE66C139F/DISCO_D/git/ralphbot/target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-compile.xml
 [debug] 	report for com.adthan#com-adthan-ralphbot_2.10;0.1 runtime produced in /media/adilson/72E66C4DE66C139F/DISCO_D/git/ralphbot/target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-runtime.xml
 [debug] 	report for com.adthan#com-adthan-ralphbot_2.10;0.1 test produced in /media/adilson/72E66C4DE66C139F/DISCO_D/git/ralphbot/target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-test.xml
@@ -1605,5 +1547,5 @@
 [debug] 	report for com.adthan#com-adthan-ralphbot_2.10;0.1 docs produced in /media/adilson/72E66C4DE66C139F/DISCO_D/git/ralphbot/target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-docs.xml
 [debug] 	report for com.adthan#com-adthan-ralphbot_2.10;0.1 pom produced in /media/adilson/72E66C4DE66C139F/DISCO_D/git/ralphbot/target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-pom.xml
 [debug] 	report for com.adthan#com-adthan-ralphbot_2.10;0.1 scala-tool produced in /media/adilson/72E66C4DE66C139F/DISCO_D/git/ralphbot/target/resolution-cache/reports/com.adthan-com-adthan-ralphbot_2.10-scala-tool.xml
-[debug] 	resolve done (1638ms resolve - 98ms download)
+[debug] 	resolve done (1435ms resolve - 92ms download)
 [info] Done updating.
