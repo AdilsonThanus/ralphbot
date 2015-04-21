@@ -1,0 +1,81 @@
+div.header
+    ul(class="nav nav-pills pull-right")
+        li.active
+            a(ng-href="#") Home
+        li
+            a(ng-href="#") About
+        li
+            a(ng-href="#") Contact
+    h3.text-muted RALPHBOT
+
+div( ng-controller="MainCtrl")
+    p {{status}}
+    p Hora: {{status.time}}
+div
+    p Direção: {{status.direcao}}
+    p Velocidade: {{status.velocidade}}
+    p Corrente : {{status.corrente}}
+span.info(ng-show="feedback")
+    {{feedback}}
+div
+    img(src="http://192.168.0.17:8081")
+    table(class="table table-responsive span3")
+        tr.span3
+            td
+            td.span3
+                button(class='btn btn-primary', ng-click="rover('frente')", title="Frente")
+                    i(class="glyphicon glyphicon-arrow-up", style="font-size:96px;")
+            td
+        tr.span3
+            td
+                button(class='btn btn-primary', ng-click="rover('esquerda')", title="Esquerda")
+                    i(class="glyphicon glyphicon-arrow-left", style="font-size:96px;")
+            td
+                button(class="btn btn-danger btn-lg" ,ng-click="rover('parar')", title="Parar")
+                    i(class="glyphicon glyphicon-stop", style="font-size:96px;")
+            td
+                button(class="btn btn-primary", ng-click="rover('direita')", title="Direita")
+                    i(class="glyphicon glyphicon-arrow-right", style="font-size:96px;")
+        tr.span3
+            td
+            td
+                button( class="btn btn-primary", ng-click="rover('tras')", title="Ré")
+                    i(class="glyphicon glyphicon-arrow-down", style="font-size:96px;")
+            td
+        tr.span3
+            td
+                button.btn(class="btn btn-warning", ng-click="rover('freia')", title="freia")
+                    i(class="glyphicon glyphicon-minus-sign", style="font-size:96px;")
+            td
+            td
+                button( class="btn btn-warning", ng-click="rover('acelera')", title="acelera")
+                    i(class="glyphicon glyphicon-plus-sign",style="font-size:96px;")
+table(class="table table-responsive span3")
+    tr.span3
+        td
+        td.span3
+            button(class='btn btn-primary', ng-click="rover('panInc')", title="Frente")
+                i(class="glyphicon glyphicon-arrow-up", style="font-size:96px;")
+        td
+    tr.span3
+        td
+            button(class='btn btn-primary', ng-click="rover('tiltDec')", title="Esquerda")
+                i(class="glyphicon glyphicon-arrow-left", style="font-size:96px;")
+        td
+        td
+            button(class="btn btn-primary", ng-click="rover('tiltInc')", title="Direita")
+                i(class="glyphicon glyphicon-arrow-right", style="font-size:96px;")
+    tr.span3
+        td
+        td
+            button( class="btn btn-primary", ng-click="rover('panDec')", title="Ré")
+                i(class="glyphicon glyphicon-arrow-down", style="font-size:96px;")
+        td
+    tr.span3
+        td
+            button(class='btn btn-primary', ng-click="rover('armDec')", title="Esquerda")
+                i(class="glyphicon glyphicon-arrow-left", style="font-size:96px;")
+        td
+        td
+            button(class="btn btn-primary", ng-click="rover('armInc')", title="Direita")
+                i(class="glyphicon glyphicon-arrow-right", style="font-size:96px;")
