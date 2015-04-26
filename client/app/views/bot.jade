@@ -1,0 +1,47 @@
+div( class="span6" ng-controller="MainCtrl")
+    span.info(ng-show="feedback")
+        {{status}}
+    div(class="panel panel-success")
+        div(class="panel-heading text-center")
+            div.h1 RalphBot
+        div(class="panel-body")
+            table(class="table text-center center-block")
+                tr
+                    td(colspan="3" class="center")
+                        img(src="http://192.168.0.30:8081", height="240", width="320")
+                        h2.center-block {{status.distance}}
+                tr
+                    td(colspan="3")
+                        div(id="arm", ui-slider="{range: 'min', step:'5'}",
+                        min="0", max="180", ng-model="roverModel.arm", ng-change="sliderChange('arm')")
+                tr
+                tr
+                    td(colspan="3")
+                        div {{status.dir}}
+                        div.pull-left &nbsp; Vel: {{status.vel}}
+                        div.pull-left &nbsp; Arm: {{status.arm}}
+                        div.pull-left &nbsp; Dist: {{status.distance}}
+                tr
+                    td
+                    td
+                        button(class='btn btn-primary', ng-click="rover('frente')", title="Frente")
+                            i(class="glyphicon glyphicon-arrow-up", style="font-size:96px;")
+                    td
+                  tr
+                    td
+                        button(class='btn btn-primary', ng-click="rover('esquerda')", title="Esquerda")
+                            i(class="glyphicon glyphicon-arrow-left", style="font-size:96px;")
+                    td
+                        button(class="btn btn-danger" ,ng-click="rover('parar')", title="Parar")
+                            i(class="glyphicon glyphicon-stop", style="font-size:96px;")
+                    td
+                        button(class="btn btn-primary", ng-click="rover('direita')", title="Direita")
+                            i(class="glyphicon glyphicon-arrow-right", style="font-size:96px;")
+                tr
+                    td
+                    td
+                        button(class='btn btn-primary', ng-click="rover('tras')", title="Tras")
+                            i(class="glyphicon glyphicon-arrow-down", style="font-size:96px;")
+                    td
+
+    p Status: {{status}}
