@@ -1,19 +1,18 @@
 'use strict';
 
-angular.module('publicApp')
+angular.module('ralpthbotApp')
     .controller('MainCtrl', function ($scope, roverSocket) {
         $scope.rover = function (command) {
-            console.log(roverSocket)
+            console.log(roverSocket);
             var request = {
                 command: command
-            }
+            };
             roverSocket.comando(request).then(function (res) {
-                //console.log(res)
                 $scope.status = res;
             });
         };
         $scope.$on('ws', function (_, msg) {
-            console.log('ws ', msg)
+            console.log('ws ', msg);
             $scope.status = msg;
             //$scope.roverModel.pan = status.pan
             //$scope.roverModel.tilt = status.tilt
@@ -34,8 +33,7 @@ angular.module('publicApp')
                 params: [
                     JSON.stringify($scope.roverModel[slider])
                 ]
-            }
-            roverSocket.comando(request)
-        }
-
+            };
+            roverSocket.comando(request);
+        };
     });

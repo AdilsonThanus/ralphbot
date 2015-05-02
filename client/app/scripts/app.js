@@ -1,24 +1,29 @@
 'use strict';
 
+/**
+ * @ngdoc overview
+ * @name ralpthbotApp
+ * @description
+ * # ralpthbotApp
+ *
+ * Main module of the application.
+ */
 angular
-    .module('publicApp', [
-        'ngCookies',
-        'ngResource',
-        'ngSanitize',
-        'ngRoute',
-        'ui.slider'
-    ])
-    .config(function ($routeProvider) {
-        $routeProvider
-            .when('/', {
-                templateUrl: '../views/bot.html',
-                controller: 'MainCtrl'
-            })
-            .when('/main', {
-                templateUrl: '../views/main.html',
-                controller: 'MainCtrl'
-            })
-            .otherwise({
-                redirectTo: '/bot'
-            });
-    });
+  .module('ralpthbotApp', [
+    'ngAnimate',
+    'ngCookies',
+    'ngResource',
+    'ngRoute',
+    'ngSanitize',
+    'ngTouch'
+  ])
+  .config(function ($routeProvider) {
+    $routeProvider
+      .when('/', {
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl'
+      })
+      .otherwise({
+        redirectTo: '/'
+      });
+  });

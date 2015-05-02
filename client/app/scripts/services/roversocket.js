@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('publicApp').
+angular.module('ralpthbotApp').
     factory('roverSocket', ['$q', '$rootScope', function ($q, $rootScope) {
         // We return this object to anything injecting our service
         var Service = {};
@@ -9,19 +9,19 @@ angular.module('publicApp').
         // Create a unique callback ID to map requests to responses
         var currentCallbackId = 0;
         // Create our websocket object with the address to the websocket
-        var url = "ws://" + location.host + "/roverSocket"
-        console.log(url)
+        var url = 'ws://' + location.host + '/roverSocket';
+        console.log(url);
         var ws = new WebSocket(url);
-//        var ws = new WebSocket("ws://localhost:8888/roverSocket");
+//        var ws = new WebSocket('ws://localhost:8888/roverSocket');
 
         ws.onopen = function () {
-            console.log("Socket has been opened!");
+            console.log('Socket has been opened!');
         };
 
         ws.onmessage = function (message) {
 //            listener(message.data);
-            console.log(message)
-            console.log(JSON.parse(message.data))
+            console.log(message);
+            console.log(JSON.parse(message.data));
             listener(JSON.parse(message.data));
         };
 
@@ -40,11 +40,11 @@ angular.module('publicApp').
 
         function listener(data) {
             var messageObj = data;
-            console.log("Received data from websocket: ", messageObj);
+            console.log('Received data from websocket: ', messageObj);
             // If an object exists with callback_id in our callbacks object, resolve it
 
             if (messageObj.callback_id === undefined) {
-                $rootScope.$broadcast("ws", messageObj)
+                $rootScope.$broadcast('ws', messageObj);
             } else if (callbacks.hasOwnProperty(messageObj.callback_id)) {
                 //console.log(callbacks[messageObj.callback_id]);
                 $rootScope.$apply(callbacks[messageObj.callback_id].cb.resolve(messageObj.data));
@@ -61,14 +61,14 @@ angular.module('publicApp').
             return currentCallbackId;
         }
 
-        // Define a "getter" for getting customer data
+        // Define a 'getter' for getting customer data
         Service.comando = function (request) {
             // Storing in a variable for clarity on what sendRequest returns
-            console.log(request, request.toString(), JSON.stringify(request))
+            console.log(request, request.toString(), JSON.stringify(request));
             return sendRequest(request);
-        }
+        };
 
         return Service;
     }]);
-// AngularJS will instantiate a singleton by calling "new" on this function
+// AngularJS will instantiate a singleton by calling 'new' on this function
 
